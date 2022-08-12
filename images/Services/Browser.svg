@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #d33838 } 
+	</style>
+	<path id="Browser" class="shp0" d="M46.5 48L1.5 48C0.67 48 0 47.33 0 46.5L0 1.5C0 0.67 0.67 0 1.5 0L46.5 0C47.33 0 48 0.67 48 1.5L48 46.5C48 47.33 47.33 48 46.5 48ZM45 45L45 18L3 18L3 45L45 45ZM3 3L3 15L45 15L45 3L3 3ZM24 6L42 6L42 12L24 12L24 6ZM15 6L21 6L21 12L15 12L15 6ZM6 6L12 6L12 12L6 12L6 6Z" />
+</svg>

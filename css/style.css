@@ -1,0 +1,482 @@
+/* Header styling goes in .header you can change the background image,color,blendmode,width etc here. */
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-wrapper {
+    background-image: url(../images/Header/overlayed-picture.svg);
+    background-color: #f84242;
+    background-blend-mode: multiply;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 125px;
+}
+
+/* Navigation Bar basic styling & alignement goes here */
+
+.nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    margin-bottom: 120px;
+}
+
+/*Menu items styling begins here!*/
+
+/* This is responsible for displaying the items in the same row. */
+
+.nav-menu>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* This class is to space the items around and give them the desired look according to the design. */
+
+.nav-menu>ul>li {
+    padding: 0px 20px;
+    opacity: 0.5;
+}
+
+/* li  elements get the desired li hover effect here. */
+
+.nav-menu>ul>li:hover {
+    opacity: 1;
+    transition-duration: 0.2s;
+}
+
+/* This is to overwrite bulma's (library) onhover effects */
+
+.nav-menu>ul>li>a:hover {
+    color: #ffffff;
+}
+
+/* Styling of the items font & color wise */
+
+.nav-menu a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+/* Items of dropdown menu styling */
+.nav-menu ul li ul li {
+    margin-top: 5px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* Dropdown menu alignment */
+.nav-menu ul li ul  {
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    margin-bottom: 5px;
+    left: 25%;
+}
+/* This is used on the li that includes the dropdown menu in order to align them */
+.dropdown-list {
+    position: relative;
+}
+/* This is to show the dropdown menu on hover */
+.nav-menu ul li:hover ul {
+    display: block;
+}
+/* hovering over drop down items will create a smooth effect */
+.nav-menu ul li ul li:hover {
+    opacity: 1;
+    transition-duration: 0.2s;
+}
+
+
+/* End of  Navigation Bar */
+
+/* Main title styling color & font */
+
+.text-block {
+    height: 445px;
+}
+
+.main-title {
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/* The text beneath the main title styling */
+
+.main-text {
+    margin-top: 60px;
+    width: 60%;
+    word-wrap: break-word;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 122px;
+}
+
+/* Used to bold certain words in the main-text according to design (check span tags) */
+
+.bolding-text {
+    font-weight: 600;
+}
+
+/* Button styling in the header */
+
+.button-header {
+    display: flex;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 13px 20px;
+    border-radius: 2px;
+    background-color: #25252a;
+}
+
+/* Adds hover effect on the button to make it less ugly. */
+
+.button-header:hover {
+    color: #f84242;
+    transition-duration: 0.2s;
+}
+
+/* This spaces the bottom button with the container similar to the design */
+
+.button-container {
+    display: flex;
+}
+
+/* --------------------------------------------------------------End of Header-------------------------------------------------------------- */
+
+/* --------------------------------------------------------------Start of Services-------------------------------------------------------------- */
+
+/* Organizing the "cards" into 3 columns with the appropriate gaps*/
+
+.services {
+    margin: 120px 0px 120px 0px;
+    background-color: white;
+}
+
+/* This is to keep the title and the image aligned. */
+
+.service-header {
+    display: flex;
+}
+
+/* Image to be displayed as flex for alignment */
+
+.service-image {
+    display: flex;
+}
+
+/* The title of each card styling and alignement */
+
+.service-title {
+    font-size: 24px;
+    color: #111111;
+    font-weight: 700;
+    padding-left: 26px;
+}
+
+/* The description of the text styled  */
+
+.service-desc {
+    margin-top: 30px;
+    width: 300px;
+    padding-left: 74px;
+    font-size: 15px;
+    color: #666666;
+    font-weight: 300;
+}
+
+/* Read more button Note: Not sure what to do more with it in terms of styling  */
+
+.read-more {
+    cursor: pointer;
+    margin-top: 28px;
+    padding-left: 74px;
+    font-size: 15px;
+    color: #d33838;
+    font-weight: 300;
+}
+
+/* Leeping the margin on the bottom part of the website */
+
+.card-container {
+    margin-bottom: 60px;
+}
+
+/* --------------------------------------------------------------End Of Services-------------------------------------------------------------- */
+
+/* --------------------------------------------------------------Start of Projects-------------------------------------------------------------- */
+
+/* This is the grey container that contains well basically everything with the proper padding color and margins */
+
+.project-container {
+    position: relative;
+    background-color: #e5e5e5;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 125px;
+    margin-bottom: 194px;
+}
+
+.current-proj {
+    width: 50%;
+}
+
+/* This is the title of the project's styling with the color and font weight */
+
+.proj-title {
+    font-size: 36px;
+    color: #111111;
+    font-weight: 300;
+}
+
+/* This is the date of the project displayed right underneath the title margining color and font stuff applied */
+
+.proj-date {
+    margin-bottom: 35px;
+    font-weight: 300;
+    color: #9d9d9d;
+    font-size: 13px;
+}
+
+/* The text beneath the date describing the project, this controls the styling */
+
+.proj-desc {
+    margin-bottom: 30px;
+    width: 380px;
+    color: #666666;
+    font-weight: 300
+}
+
+/* client title (that reads client) styling */
+
+.client {
+    font-size: 11px;
+    color: #9d9d9d;
+    font-weight: 300;
+}
+
+/* client's name styling  */
+
+.client-name {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #666666;
+    font-weight: 300;
+}
+
+/* role title (that reads title) styling */
+
+.role {
+    font-size: 11px;
+    color: #9d9d9d;
+    font-weight: 300;
+}
+
+/* This is the role's name styling */
+
+.role-name {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #666666;
+    font-weight: 300;
+}
+
+/* This is the tool's  title (it reads tools) styling*/
+
+.tools {
+    font-size: 11px;
+    color: #9d9d9d;
+    font-weight: 300;
+}
+
+/* Tool name's styling */
+
+.tools-name {
+    margin-bottom: 60px;
+    font-size: 15px;
+    color: #666666;
+    font-weight: 300;
+}
+
+/* view project button note some of this removes the styling done by Bulma and html5 to look as intended */
+
+.view-project {
+    display: flex;
+}
+
+.view-project a {
+    padding: 15px 15px;
+    border-radius: 2px;
+    background-color: #d32020;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Hover effect, colors changeable */
+
+.view-project a:hover {
+    color: #25252a;
+    transition-duration: 0.2s;
+}
+
+.laptop-image {
+    background-image: url("images/Project/MacBook - Your screen here copy.svg");
+    bottom: -11%;
+    position: absolute;
+    right: 0;
+}
+
+/* --------------------------------------------------------------End of Projects-------------------------------------------------------------- */
+
+/* --------------------------------------------------------------Start of Text Div-------------------------------------------------------------- */
+
+.text-div {
+    margin-bottom: 120px;
+}
+
+/* Design of big text w/color */
+
+.big-text {
+    font-size: 72px;
+    color: #111111;
+    font-weight: 300;
+}
+
+/* Red part of word can be changed */
+
+.big-text .color-change {
+    color: #d32020;
+}
+
+/* text styling */
+
+.small-text {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 300;
+}
+
+/* --------------------------------------------------------------End of Text Div-------------------------------------------------------------- */
+
+/* --------------------------------------------------------------Start of SCAIL Div-------------------------------------------------------------- */
+
+/* contains all the SCAIL Icons */
+
+.icon-container {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+/* icon styling to nmake sure they are of the same size and are aligned etc */
+
+.icon-styling a {
+    cursor: pointer;
+    display: flex;
+    font-size: 48px;
+    color: #d96060;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    margin-right: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+/* default hover effect + transition properties */
+
+.icon-styling a:hover {
+    font-size: 54px;
+    transition-duration: 0.25s;
+    color: black;
+}
+
+/*  Color change matching each social media's colors */
+
+.mail a:hover {
+    color: #cba84f;
+}
+
+/*  Color change matching each social media's colors */
+
+.facebook a:hover {
+    color: #3b5998;
+}
+
+/*  Color change matching each social media's colors */
+
+.behance a:hover {
+    color: #053EFF;
+}
+
+/*  Color change matching each social media's colors */
+
+.twitter a:hover {
+    color: #1da1f2;
+}
+
+/*  Color change matching each social media's colors */
+
+.youtube a:hover {
+    color: #c4302b;
+}
+
+/*  Color change matching each social media's colors */
+
+/* Iconmoon inclusion for the envelope to be visible */
+
+.icon-email:before {
+    content: "\1f32b";
+}
+
+/* Iconmoon inclusion for the youtube logo to be visible */
+
+.icon-youtube-logotype:before {
+    content: "\e900";
+}
+
+/* --------------------------------------------------------------End of SCAIL Div-------------------------------------------------------------- */
+
+/* --------------------------------------------------------------Start Of Bottom Text Div-------------------------------------------------------------- */
+
+/* Container with adequate spacing */
+
+.bottom-text-container {
+    margin-bottom: 120px;
+}
+
+/* first line styling */
+
+.line1 {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* changing the color of the heart */
+
+.heartcolor {
+    color: #e74c3c;
+}
+
+/* copyright line styling */
+
+.copyright {
+    font-size: 15px;
+    color: #666666;
+}
+
+/* bolding the name */
+
+.bottom-bolding {
+    color: black;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------END Of Bottom Text Div-------------------------------------------------------------- */
